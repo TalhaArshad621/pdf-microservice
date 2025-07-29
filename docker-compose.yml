@@ -7,3 +7,8 @@ services:
       - '8080:8080'
     volumes:
       - .:/app
+    networks:
+      - app-network
+networks:
+  app-network:
+    external: true
